@@ -4,14 +4,6 @@ const pkg = require('./package.json')
 
 const fs = require('fs')
 
-let base;
-
-if (fs.existsSync('./CNAME')) {
-  base = ''
-} else {
-  base = '/bigrat.monster'
-}
-
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
   preprocess: [
@@ -30,9 +22,5 @@ module.exports = {
         noExternal: Object.keys(pkg.dependencies || {})
       }
     },
-    paths: {
-      assets: base,
-      base: base,
-    }
   }
 }
