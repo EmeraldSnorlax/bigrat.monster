@@ -10,7 +10,7 @@
 		"format": "prettier --write ./src/**/*.{svelte,ts} ./*.{ts,cjs}",
 		"lint": "eslint ./src/**/*.{ts,svelte} --ignore-path .gitignore .",
 		"lint:fix": "eslint --fix ./src/**/*.{ts,svelte} --ignore-path .gitignore .",
-		"predeploy": "yarn build",
+		"predeploy": "NODE_ENV='production' yarn build",
 		"deploy": "yarn gh-pages -d build"
 	},
 	"devDependencies": {

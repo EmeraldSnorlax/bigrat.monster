@@ -6,7 +6,7 @@ const fs = require('fs')
 
 let base;
 
-if (fs.existsSync('./CNAME') || process.env.NODE_ENV === 'development') {
+if (fs.existsSync('./CNAME')) {
   base = ''
 } else {
   base = '/bigrat.monster'
