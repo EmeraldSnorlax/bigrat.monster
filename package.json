@@ -11,7 +11,7 @@
 		"lint": "eslint ./src/**/*.{ts,svelte} --ignore-path .gitignore .",
 		"lint:fix": "eslint --fix ./src/**/*.{ts,svelte} --ignore-path .gitignore .",
 		"predeploy": "yarn build",
-		"deploy": "gh-pages -d build"
+		"deploy": "yarn gh-pages -d build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "next",
