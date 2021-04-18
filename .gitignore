@@ -1,4 +1,5 @@
-# IMPORTANT!
-# This ignores the /fonts/ folder. 
-# If you would like to install the fonts yourself, please go to the GitHub repostiory of Source® Sans Pro and Source® Code Pro.
-fonts/
+.DS_Store
+node_modules
+/.svelte
+/build
+/functions
